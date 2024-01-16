@@ -25,7 +25,7 @@ header{
 #main-title{
   text-align: center;
   font-family: "Kaushan Script";
-  color: #E53D00;
+  color: #e50000;
   font-size: 2.5em;
   
   text-justify:initial;
@@ -82,14 +82,14 @@ footer{
 }
 
 footer a{
-    color:#0D3B66;
+    color:#1d9d00;
     text-decoration: none;
     font-size: 1.8em;
     font-family: "Roboto";
 }
 
 footer a:hover{
-    color:#2A9D8F;
+    color:#090e48;
     text-decoration: underline;
     
 
