@@ -1,65 +1,154 @@
-body {
-    display: grid;
-    height: 100vh;
-    grid-template:  auto auto 1fr auto /auto 1fr auto;
-    
-  
-  }
-  
-  header {
-    grid-column: 2/3;
-    background: lightpink;
-    display:grid;
-    grid-template: 100% / 45% 55%;
-    
-    
-    
-    
-    
-    
-  }
-  h1{
-    justify-self: start;
-    align-self: center;
-  }
-  img{
-    justify-self: end;
-    padding-right:2rem;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&family=Kaushan+Script&family=Roboto&display=swap');
 
 
-  nav{
-    padding: 2rem;
-    text-align: center;
-    grid-column: 2/3;
-  }
+body{
+    background-color: #E9C46A;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header{
+    background-color:#E76F51 ;
+    display:flex;
+    
+    
+}
+#profile-image{
+  padding-left: 25%;
+}
+#name{
+  padding-left: 10%;
+  padding-top: 2%;
   
-  main{
-    padding: 2rem;
+}
+
+#main-title{
+  text-align: center;
+  font-family: "Kaushan Script";
+  color: #E53D00;
+  font-size: 2.5em;
+  
+  text-justify:initial;
+  padding-left: 5%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
     text-align: center;
+    
+    text-decoration: none;
+    font-family: "roboto";
+    font-weight: bold;
+    
+    font-size: 2em;
+    padding: 35px;
+    
+}
+
+nav a:hover{
+    background-color: #0D3B66 ;
+    color:#E53D00;
+    text-decoration: none;
+}
+
+
+nav a {
+    
+    color: #0D3B66;
+    transition: all 1s ease-out;
+  }
+.card{
+  
+  font-family: "roboto";
+  padding-left: 45%;
+  padding-top: 5%;
+  font-size: 1.5em;
+  color: purple;
+}
+
+
+footer{
+    background-color:#E76F51;
+    color:#0D3B66;
+    padding: 25px 25px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    grid-column: 2/3;
-  }
-  
-  
-  .card
-  {
-    padding: 2rem;
-    text-align: left;
-  }
-  ul{
-    padding-left: 35%;
-  }
-  h3{
-    text-align: center;
-  }
-  footer {
-    background: wheat;
-    padding: 2rem;
-    text-align: center;
-    grid-column: 2/3;
+}
 
-  }
+footer a{
+    color:#0D3B66;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-family: "Roboto";
+}
+
+footer a:hover{
+    color:#2A9D8F;
+    text-decoration: underline;
+    
+
+}
+
+  
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+
+  
+@media screen and (max-width: 900px) {
+    
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+        font-size: 1.3em;
+        
+    }
+    .card{
+      font-size: 1em;
+      padding-left: 35%;
+    }
+    header{
+      font: size 0.8em;;
+      display: block;
+      
+      
+    }
+    #profile-image{
+      margin-left: 15%;
+    }
+    #main-title{
+      font-size: 2em;
+    }
+    #name{
+      padding-left: 28%;
+    }
+    
+  
+    
+   
+    footer {
+        margin-top: 25px;
+    }
+    footer a {
+        font: 1em;
+    }
+
+}
+
   
   
   
