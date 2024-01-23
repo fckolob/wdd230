@@ -103,11 +103,14 @@ footer p:hover{
   
 @media screen and (max-width: 900px) {
     
-  nav, footer {
+  nav {
+    flex-direction: row;
+  }
+  footer{
     flex-direction: column;
   }
   nav a {
-    display: block;
+    flex-direction: row;
     padding: 15px;
     font-size: 1.3em;
         
@@ -123,13 +126,14 @@ footer p:hover{
       
   }
   #profile-image{
-    margin-left: 15%;
+    margin-left: 0;
+    
   }
   #main-title{
     font-size: 2em;
   }
   #name{
-    padding-left: 28%;
+    padding-left: 10%;
   }
     
   
