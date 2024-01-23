@@ -35,7 +35,7 @@ header{
 
 nav{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   background-color: #e7e279e8;
 }
@@ -145,6 +145,11 @@ footer p:hover{
   }
     
 
+}
+@media only screen and (min-width: 1200px) {
+  nav a{
+    flex-direction: row;
+  }
 }
 
   
