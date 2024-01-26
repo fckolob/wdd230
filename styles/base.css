@@ -50,7 +50,7 @@ iframe{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #e7e279e8;
+  background-color: #e7e279e8 ;
 }
 
 a {
@@ -120,8 +120,13 @@ footer p:hover{
   
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 900px){
+  
   body{
     width: 100%;
+  }
+  header{
+    max-height: 225px;
+    height: auto;
   }
   iframe{
     width: 300px;
@@ -129,17 +134,22 @@ footer p:hover{
     padding-top: 10rem;
   }
   #menu {
-    display: block;
-    font-size: 2rem;
+    display:flex;
+    font-size: 4rem;
     font-weight:700;
     text-decoration: none;
-    padding: .5rem .75rem;
-    background-color: #eee;
-    color: #000;
+    
+    justify-content: space-around;
+    background-color: #E76F51;
+    color:#0D3B66;
   }
   
   #menu::before {
     content: "≡";
+    font-size: 3rem;
+    justify-content: space-around;
+    
+    background-color: #E76F51 ;
   }
   
   nav {
@@ -166,8 +176,9 @@ footer p:hover{
   }
   
   .navigation a:hover, navigation a:active {
-    color: white;
-    background-color: black;
+    background-color: #0D3B66 ;
+    color:#E53D00;
+    text-decoration: none;
   }
   
   .show li {
@@ -190,17 +201,20 @@ footer p:hover{
   }
   
   #menu {
-    display: block;
-    font-size: 2rem;
+    display:block;
+    font-size: 3rem;
     font-weight:700;
-    text-decoration: none;
-    padding: .5rem .75rem;
-    background-color: #eee;
-    color: #000;
+    text-decoration: bold;
+    justify-content: space-around;
+    background-color:#E76F51 ;
+    color:#0D3B66;
   }
   
   #menu::before {
     content: "≡";
+    font-size: 3rem;
+    text-decoration: bold;
+    
   }
   
   nav {
@@ -222,13 +236,14 @@ footer p:hover{
     text-decoration: none;
     color: black;
     font-weight: 700;
-    transition: 0.5s;
+    transition: all 0.5s ease-out;
     font-size: clamp(1rem, 2vmin, 1.5rem);
   }
   
   .navigation a:hover, navigation a:active {
-    color: white;
+    color:#E53D00 ;
     background-color: black;
+    font-size: 1.2rem;
   }
   
   .show li {
@@ -255,6 +270,10 @@ footer p:hover{
   }
   #profile-image{
     margin-left: 0;
+    max-width:70px;
+    max-height:140px;
+    width: auto;
+    height: auto;
     
   }
   #main-title{
@@ -271,9 +290,30 @@ footer p:hover{
     margin-top: 25px;
     font: 1em;
   }
-    
+  @media only screen and (max-width: 480px){
+    header{
+      
+      
+      max-height:  fit-content ;
+    }
+    #profile-image{
+      padding-left: 0%;
+    }
+    #name{
+      font-size: 1.4rem;
+      padding-top: 1rem;
+    }
+      
+  }
+  @media only screen and (min-width: 768px){
+    #menu::before{
+      padding-left: 8rem;
+    }
+  }
 
 }
+
+
 
 @media only screen and (min-width: 900px) {
   .navigation {
@@ -290,5 +330,5 @@ footer p:hover{
   #menu {
     display: none;
   }
-  }
+}
   
