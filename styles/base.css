@@ -204,7 +204,7 @@ footer p:hover{
     display:block;
     font-size: 3rem;
     font-weight:700;
-    text-decoration: bold;
+    text-decoration:solid;
     justify-content: space-around;
     background-color:#E76F51 ;
     color:#0D3B66;
@@ -213,7 +213,7 @@ footer p:hover{
   #menu::before {
     content: "≡";
     font-size: 3rem;
-    text-decoration: bold;
+    text-decoration:solid;
     
   }
   
