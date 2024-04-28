@@ -90,9 +90,6 @@
   
   
   
-  main{
-    display: flex;
-  }
   
   
   
@@ -104,10 +101,7 @@
   }
   
   
-  .assigment-li{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
+  
   
   #menu.show::before {
     content: "X";
@@ -117,11 +111,7 @@
     flex-direction: column;
   }
   
-  .card{
-    font-size: 1em;
-  align-items: center;
-  padding-right: 35%;
-  }
+  
   
   #profile-image{
     margin-left: 0;
@@ -136,21 +126,27 @@
     flex-direction: column;
     
   }
-  section{
-    align-self: center;
-  }
+  
   #map-container{
     display: flex;
     flex-direction: column;
   }
   iframe{
     align-self: center;
+    padding-top: 0%;
   }
   #main-title{
     font-size: 2em;
+    text-align: center;
+    font-family: "Kaushan Script";
+    color: #650059;
+    font-size: 2.5em;
   }
   #name{
     padding-left: 10%;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5rem;
   }
     
   
@@ -164,24 +160,37 @@
     background-color: rgba(255, 255, 255, 0.2);
     }
     .card{
-      
+      background-color:rgb(243, 173, 35);
       font-family: "roboto";
-      padding-left: 45%;
-      padding-top: 5%;
+      
+      
       font-size: 1.5em;
       color: purple;
       align-self: center;
+      border-radius: 5%;
+      border: 1px solid black;
+      width: 90% ;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      
+    }
+    #information{
+      height: 300px;
+      margin-bottom:10% ;
+    }
+    .card-title{
+      background-color:#a8e9e8;
+      
     }
     .assigment{
       font-family: "roboto";
       
       font-size: 1em;
       color: purple;
+      margin-left: 3%;
+      margin-right: 3%;
     }
-    .assigment-li{
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-    }
+    
     .assigment-li a{
       transition: all 2s ease-out;
       
@@ -204,6 +213,9 @@
       align-items: center;
       font-size: 1.3em;
       flex-direction: column;
+    }
+    footer p{
+      font-family: "Roboto";
     }
     footer p:hover{
       text-decoration: underline;
