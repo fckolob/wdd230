@@ -1,0 +1,54 @@
+@media  screen and (min-width: 900px) {
+    
+    body{
+        
+        max-width: 1600px;
+        margin: 0 auto;
+      }
+      
+    header{
+        
+        
+        max-width: 1600px;
+        align-content: center;
+          
+    }
+    nav{
+        
+        max-width: 1600px ;
+        align-content: center;
+        
+        
+
+    }
+    .chamber-navigation{
+        display: flex;
+        flex-direction: row;
+        
+        
+        
+        
+        list-style: none;
+        justify-content: space-around;
+        
+        
+        
+      }
+    
+    
+      
+      footer{
+        
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.7em;
+      }
+      footer p:hover{
+        text-decoration: underline;
+      }
+      
+      
+  }
