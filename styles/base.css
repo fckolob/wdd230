@@ -46,7 +46,15 @@
     font-size: 3rem;
     justify-content: space-around;
     
-    background-color: #E76F51 ;
+     ;
+  }
+  #mode {
+    position: absolute;
+    top: 2rem;
+    right: 6rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
   }
   
   nav {
@@ -163,82 +171,101 @@
   nav .active{
     background-color: rgba(255, 255, 255, 0.2);
     }
-    .card{
-      background-color:rgb(243, 173, 35);
-      font-family: "roboto";
+  .card{
+    background-color:rgb(243, 173, 35);
+    font-family: "roboto";
       
       
-      font-size: 1.5em;
-      color: purple;
-      align-self: center;
-      border-radius: 5%;
-      border: 1px solid black;
-      width: 90% ;
-      margin-top: 5%;
-      margin-bottom: 5%;
+    font-size: 1.5em;
+    color: purple;
+    align-self: center;
+    border-radius: 5%;
+    border: 1px solid black;
+    width: 90% ;
+    margin-top: 5%;
+    margin-bottom: 5%;
       
-    }
-    #information{
-      height: 300px;
-      margin-bottom:10% ;
-    }
-    .card-title{
-      background-color:#a8e9e8;
+  }
+  #information{
+    height: 300px;
+    margin-bottom:10% ;
+  }
+  .card-title{
+    background-color:#a8e9e8;
       
-    }
-    .assigment{
-      font-family: "roboto";
+  }
+  .assigment{
+    font-family: "roboto";
       
-      font-size: 1em;
-      color: purple;
-      margin-left: 3%;
-      margin-right: 3%;
-    }
+    font-size: 1em;
+    color: purple;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
     
-    .assigment-li a{
-      transition: all 2s ease-out;
+  
+  .hover-light a{
+    transition: all 2s ease-out;
+  }
+  .hover-light a:hover{
+    text-decoration: underline;
+    background-color: unset;
+    color:darkblue;
       
-      
-    }
-    .assigment-li a:hover{
-      text-decoration: underline;
-      background-color: unset;
-      color:mediumblue;
-      
-    }
+  }
+  .hover-dark a{
+    color:rgb(255,255,255);
+    transition: all 2s ease-out;
     
-    footer{
-      background-color:#E76F51;
-      color:black;
-      padding: 25px 25px;
-      margin-top: 200px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      font-size: 1.3em;
-      flex-direction: column;
-    }
-    footer p{
-      font-family: "Roboto";
-    }
-    footer p:hover{
-      text-decoration: underline;
-    }
-    @media  screen and (max-width: 480px){
-      #name{
+  }
+  .hover-dark a:hover{
+    text-decoration: underline;
+    background-color: unset;
+    color:red;
+  }
+  
+  
+  
+  footer{
+    background-color:#E76F51;
+    color:black;
+    padding: 25px 25px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3em;
+    flex-direction: column;
+  }
+  footer p{
+    font-family: "Roboto";
+  }
+  footer p:hover{
+    text-decoration: underline;
+  }
+  @media  screen and (max-width: 480px){
+    #name{
         font-size: 1.2rem;
         padding-left: 4%;
-      }
-      .assigment{
-        font-size: 1rem;
-      }
-      .assigment-li{
-        font-size: 1.2rem;
-      }
-      footer p{
-        font-size: 1.2rem;
-      }
     }
+    #mode{
+      font-size: 1.7rem;
+      right:1.5rem;
+      top: 0.5rem;
+    }
+    #menu{
+      top:3rem ;
+    }
+    .assigment{
+      font-size: 1rem;
+    }
+    .assigment-li{
+      font-size: 1.2rem;
+    }
+    footer p{
+      font-size: 1.2rem;
+    }
+  }
 
 
 

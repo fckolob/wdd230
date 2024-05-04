@@ -48,6 +48,14 @@
     
     background-color: #E76F51 ;
   }
+  #overview-container{
+    margin: 0 auto;
+  }
+  #piriapolis-overview{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+  }
   
   nav {
     background-color: tomato;

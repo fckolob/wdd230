@@ -15,6 +15,14 @@
   #menu {
     display: none;
   }
+  #mode {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    
+  }
   body{
       background-color: #E9C46A;
       max-width: 1600px;
@@ -150,17 +158,8 @@
       padding-left: 0%;
     }
     
-    .assigment-li a{
-      transition: all 2s ease-out;
-      
-      
-    }
-    .assigment-li a:hover{
-      text-decoration: underline;
-      background-color: unset;
-      color:mediumblue;
-      
-    }
+    
+    
     
     footer{
       background-color:#E76F51;
