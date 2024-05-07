@@ -28,6 +28,62 @@ main{
     display: flex;
     flex-direction: column;
 }
+#menu {
+	font-size: 4rem;
+  border-radius: 1rem;
+	border: 0;
+	background:var(--accent2-color);
+	color: #000;
+ 	position:absolute;
+  top: 3rem;
+  right: 2rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.chamber-navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color:var(--nav-background-color);
+	color:var(--nav-link-color);
+  position: absolute;
+  top: 7rem;
+  right: 5rem;
+  
+}
+
+.chamber-navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color:var(--nav-link-color);
+  font-size: 1.5rem;
+  transition: ease-in-out 0.5s;
+}
+.chamber-navigation a:hover {
+	background-color:var(--nav-hover-background-color);
+	color:var(--nav-hover-link-color);
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: flex;
+  flex-direction: column;
+}
+
+.active::before {
+	content: "📍";  /* just a wayfinding symbol for the user */
+  
+}
 
 body {
     max-width: 100%;
@@ -65,7 +121,7 @@ body {
     position: absolute;
     top: 60%;
     left: 25%;
-    transform: translate(-50%, -50%);
+    transform: translate(-40%, -40%);
     transition: all 3s ease-out;
 
 }
@@ -111,7 +167,7 @@ body {
   }
 
   header {
-    
+    position: relative;
     text-align: center;
     color: var(--headline-color-on-color);
     background-color: var(--paragraph-background-color);
@@ -193,32 +249,7 @@ body {
     color: var(--paragraph-color-on-color);
   }
   
-  .chamber-navigation  {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--nav-background-color);
-    
-    
-    
-  }
-  .chamber-navigation a {
-    
-    min-width: 120px;
-    text-decoration: none;
-    transition: ease-in-out 0.5s;
-    font-size: 2rem;
-  }
-  .chamber-navigation a:link, nav a:visited {
-    color: var(--nav-link-color);
-  }
-  .chamber-navigation a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-  }
-  .chamber-navigation .active{
-    background-color:rgba(255, 255, 255, 0.5);
-  }
+ 
   footer{
     background-color: var(--accent3-color);
     display: flex;
@@ -236,4 +267,81 @@ body {
   }
   footer p:hover{
     text-decoration: underline;
+  }
+  @media  screen and (max-width: 800px){
+    #menu{
+      font-size: 2rem;
+      top: 3rem;
+      right: 1rem;
+    }
+    .centered{
+      position: absolute;
+      top: 60%;
+      left: 25%;
+      transform: translate(-5%, -5%);
+      transition: all 3s ease-out;
+    }
+    #hero-text{
+      font-size: 1rem;
+
+    }
+    #join-link{
+      font-size: 1.5rem;
+    }
+
+  }
+  @media  screen and (max-width: 600px){
+    #hero-text{
+      font-size: 0.9rem;
+    }
+    .centered{
+      left: 27%;
+    }
+  }
+  @media  screen and (max-width: 480px){
+    #menu{
+      font-size: 2rem;
+      top: 1rem;
+      right: 1rem;
+    }
+    .chamber-navigation{
+      top: 4rem;
+      right:2rem
+    }
+    .chamber-navigation a{
+      font-size: 1rem;
+    }
+    #overview-container{
+      height: auto;
+      width:auto;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    
+    #overview-container :hover{
+      transform: scale(1.2);
+    }
+    #join-link{
+      font-size: 1rem;
+      
+    }
+    .chamber-card{
+      font-size: 1.5rem;
+      height:fit-content;
+    }
+    .company-card{
+      font-size: 1.5rem;
+
+    }
+    .company-info{
+      font-size: 1rem;
+    }
+    #hero-text{
+      font-size: 1rem;
+
+    }
+    .centered{
+      left: 15%;
+    }
+    
   }
