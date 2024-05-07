@@ -187,7 +187,7 @@
       
   }
   #information{
-    height: 540px;
+    height: 447px;
     margin-bottom:10% ;
   }
   .card-title{
@@ -199,12 +199,13 @@
       
     font-size: 1em;
     color: purple;
-    margin-left: 3%;
-    margin-right: 3%;
+    /* margin-left: 3%;
+    margin-right: 3%; */
+    padding: 5px;
   }
   .assigment-li{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   
   .hover-light a{
