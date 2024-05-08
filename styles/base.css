@@ -91,10 +91,6 @@
   }
   
 
-  #name{
-    padding-left: 2%;
-    padding-top: 2%;
-  }
 
   
 
@@ -153,6 +149,7 @@
   }
   #name{
     padding-left: 10%;
+    padding-top: 2%;
     justify-self: center;
     align-self: center;
     font-size: 2rem;
