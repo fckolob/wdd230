@@ -133,6 +133,9 @@
       color: purple;
       align-self:unset;
     }
+    .card-title{
+      font-size: 2rem;
+    }
     #learning-activities{
       grid-column: 1/3;
       height:fit-content;
