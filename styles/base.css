@@ -156,7 +156,37 @@
     font-weight: bold;
   }
     
+  .hero {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0,0,0,.1);
+    
+    
+  }
   
+
+  
+  .herolabel {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0,0,0,.75);
+    padding: 0.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+    
+  }
+  
+  .herolabel p {
+    margin: 0;
+    padding: .05rem;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family:"kaushan", serif;
+  }
     
    
   

@@ -12,6 +12,18 @@
   .navigation a:hover{
       font-size: 2rem;
   }
+  .hero{
+    grid-column:1/4 ;
+  }
+  .herolabel{
+    top: 30px;
+    left: 30px;
+    padding: 1.5rem;
+  }
+  .herolabel p{
+    padding: 0.25rem;
+    font-size: 1.5rem;
+  }
   #menu {
     display: none;
   }
