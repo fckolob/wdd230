@@ -9,6 +9,60 @@
     main{
       height: fit-content;
     }
+    #discover-main{
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      grid-template-rows: auto auto 1fr;
+    }
+    #visits-information{
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    
+    .sidebar-div{
+      width: 300px;
+      grid-column: 1/2;
+      grid-row: 2/3;
+      height: auto;
+      padding: 1rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+    .statistics-image{
+      width: 300px;
+      height: auto;
+    }
+    #statistics1{
+      grid-row: 1/2;
+    }
+    #calendar{
+      width: 300px;
+      margin-left: 0%;
+      padding-left: 0%;
+      grid-column: 1/2;
+      grid-row: 3/4;
+      padding: 1rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+    #discover-gallery{
+      grid-column: 2/3;
+      grid-row: 2/4;
+    }
+    .gallery-img{
+      padding: 3rem;
+      background:black;
+      animation: fade 15s;
+      
+    }
+    @keyframes fade{
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
     
   header{
       

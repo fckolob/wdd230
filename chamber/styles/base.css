@@ -25,8 +25,32 @@
   --nav-hover-background-color:#FB8500;
 }
 main{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+#discover-main{
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-div{
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  padding: 0.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.statistics-image{
+  width: 90%;
+  height: auto;
+}
+#calendar{
+  width: 90%;
+  
+  margin: 0 auto;
+  padding: 0.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 #menu {
 	font-size: 4rem;
