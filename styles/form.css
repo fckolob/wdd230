@@ -1,0 +1,109 @@
+
+
+
+
+
+main{
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+
+.wf1{
+    display: block;
+    width: 100%;
+    max-width: 450px;
+}
+
+.wf1 fieldset{
+    margin:  0 auto;
+    margin-top: 1.1rem;
+    margin-bottom: 1.1rem;
+    border: 1px solid blueviolet;
+    border-radius: 6px;
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    max-width: 450px;
+}
+
+.wf1 fieldset legend{
+    color: #445ba9;
+    font-size: 2rem;
+    padding: unset;
+    padding-bottom: unset;
+    padding-top: unset;
+    margin: unset;
+    margin-top: unset;
+    margin-bottom: unset;
+    height: 20px;
+    
+}
+
+.wf1 label{
+    display:block;
+    padding-top: 1rem;
+    color: red;
+    font-size: .9rem;
+}
+
+
+
+.wf1 input[type="text"], .wf1 input[type="password"], .wf1 input[type="email"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px gray;
+    border-radius: 6px;
+    padding: 1rem;
+    color: gray;
+    width: 100%;
+    max-width: 400px;
+    font-size: 1.3rem;
+    appearance: none;
+}
+
+#r {
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+	font-size: 1.3rem;
+	width: 200px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+
+
+.wf1 input[type="submit"]{
+    border: none;
+    font-size: 1.5rem;
+    background-image: linear-gradient(#136a9c, #0e196f );
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 4px #999;
+
+}
+
+.wf1 input:required{
+    border-bottom: solid 8px red;
+}
+
+.wf1 input:required:valid{
+    border-bottom: solid 8px green;
+}
+

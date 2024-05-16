@@ -48,6 +48,13 @@
         
         
     }
+    #record-message{
+      grid-column: 1/4;
+      padding-top: 2rem;
+      padding-bottom: 1.5rem;
+      font-size: 3rem;
+      
+    }
     #profile-image{
       padding-left: 25%;
     }

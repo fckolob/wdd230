@@ -20,6 +20,12 @@
     background-color:#E76F51;
     position: relative;
   }
+  #record-message{
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+    font-size: 2rem;
+  }
   iframe{
     width: 300px;
     height: 225px;

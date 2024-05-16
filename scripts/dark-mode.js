@@ -11,6 +11,8 @@ const cardTitle = document.querySelectorAll(".card-title");
 const assigmentLi = document.querySelectorAll(".assigment-li");
 const hoverLight = document.querySelectorAll(".hover-light");
 const menu = document.querySelector("#menu");
+const h1 = document.querySelector("h1");
+const recordMessage = document.querySelector("#record-message");
 
 assigmentLi.forEach(aLi=> {
 			
@@ -25,6 +27,7 @@ modeButton.addEventListener("click", () => {
 		body.style.background = "#000";
         header.style.background = "#000";
         header.style.color = "#fff";
+		
 		navigation.style.background = "rgb(105, 0, 144)";
 		footer.style.background = "rgb(105, 0, 144)";
 		modeButton.textContent = "🔆";
@@ -32,6 +35,7 @@ modeButton.addEventListener("click", () => {
 		cardInformation.style.background = "rgb(0, 0, 128)";
 		menu.style.background = "#000";
 		menu.style.color = "#fff";
+		
 		cardTitle.forEach(ct => {
 			ct.style.background = "rgb(106, 90, 205)";
 			ct.style.color = "#fff";
@@ -42,13 +46,14 @@ modeButton.addEventListener("click", () => {
 			aLi.classList.add("hover-dark");
 			aLi.classList.remove('hover-light');
 		});
-		
-		
+		h1.style.color = "#fff";
+		recordMessage.style.color= "rgb(255, 255, 255)";
 	} else {
 		
 		body.style.background = "rgb(233, 196, 106)";
 		header.style.background = "rgb(231, 111, 81)";
-		header.style.color = "black";
+		header.style.color = "";
+		main.style.color = "";
 		main.style.background ="rgb(233, 196, 106)";
 		modeButton.textContent = "🕶️";
 		navigation.style.background = "";
@@ -56,7 +61,8 @@ modeButton.addEventListener("click", () => {
 		card.style.background = "";
 		cardInformation.style.background = "";
 		menu.style.background = "";
-		menu.style.color = ""; 
+		menu.style.color = "";
+		
 		cardTitle.forEach(ct => {
 			ct.style.background = "";
 			ct.style.color = "";
@@ -67,6 +73,7 @@ modeButton.addEventListener("click", () => {
 			aLi.classList.remove("hover-dark");
 			aLi.classList.add('hover-light');
 		});
-		
+		h1.style.color ="rgb(0, 0, 0)";
+		recordMessage.style.color= "rgb(0, 0, 0)"
 	}
 });
