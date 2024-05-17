@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Fernando Caballero">
+    <meta name= "description" content="Piriapolis chamber of commerce home page">
+    <meta property="og:title" content="Piriapolis Chamber of Commerce"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fckolob.github.io/wdd230/chamber" />
+    <meta property="og:image" content="https://fckolob.github.io/wdd230/images/web-development.jpg">
+    <title>Piriapolis Chamber of Commerce.</title>
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <link rel="icon" href="icon.PNG">
+</head>
+<body>
+    <header>
+        <img id="icon-image" src="icon.PNG" alt="icon">
+        <button id="menu"></button>
+        <h1 id="chamber-main-title">Piriapolis Chamber of Commerce.
+        </h1>
+        
+    </header>
+    
+    <nav id="chamber-nav">
+        
+        <ul class="chamber-navigation">
+            <li class="nav-li">
+                <a href= "index.html"id="nav-1">Home</a>
+            </li>
+    
+    
+            <li class="nav-li">
+                <a href="" id="nav-2">Discover</a>
+            </li>
+    
+    
+            <li class="nav-li">
+                <a href="" target="_blank" id="nav-3">Directory</a>
+            </li>
+    
+    
+            <li class="nav-li" class="active">
+                <a href="" id="nav-4">Join</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <label>First Name
+                    <input type="text" required name="fname" id="chamber-fname">
+                </label>
+                <label>Last Name
+                    <input type="text" required name="lname" id="chamber-lname">
+                </label>
+                <label>Title or Position
+                    <input type="text" required name="title" id="chamber-title" pattern="^[a-zA-Z0-9-_ ]+$">
+                </label>
+                <label>Email Address
+                    <input type="email" required name="email" id="chamber-email" placeholder="someone@gmail.com">
+                </label>
+                <label>Mobile Phone Number
+                    <input type="tel" required name="mobile-phone-number" id="chamber-mobile-phone-number">
+                </label>
+                <label>Business / Organization's name
+                    <input type="text" required name="business-name" id="chamber-business-name">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+
+                <label>NP Membership (non profit)
+                    <input type="radio" name="level" id="chamber-np" value="np">
+                </label>
+
+                <label>Bronze Membership
+                    <input type="radio" name="level" id="chamber-bronze" value="bronze">
+                </label>
+
+                <label>Silver Membership
+                    <input type="radio" name="level" id="chamber-silver" value="silver">
+                </label>
+
+                <label>Gold Membership
+                    <input type="radio" name="level" id="chamber-gold" value="gold">
+                </label>
+
+            </fieldset>
+            <fieldset>
+                <label>Organization or Business Description
+                    <textarea name="description" id="chamber-description"></textarea>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp" value="current-timestamp">
+            </fieldset>
+
+            <fieldset>
+                <label>
+                    <input type="submit" id="chamber-submit" value="Join the Chammber">
+                </label>
+            </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+
+    </main>
+            
+    
+    
+    <footer>
+        <p class="current-year">
+        
+        </p>
+
+        <p id="lastModified">
+            
+        </p>
+    </footer>
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/hamb-menu.js"></script>
+    <script src="scripts/timestamp-form.js"></script>
+</body>
+</html>
