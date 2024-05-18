@@ -14,6 +14,31 @@
       grid-template-columns: 350px 1fr;
       grid-template-rows: auto auto 1fr;
     }
+
+    #join-main{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    #join-form{
+      grid-column: 1/2;
+      height: fit-content;
+      margin-top: 5rem;
+    }
+
+    #benefits{
+      grid-column: 2/3;
+      margin: 0 auto;
+      margin-top: 1rem;
+      
+    }
+
+    #submit-fieldset{
+      padding-bottom: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 0rem;
+    }
+
     #visits-information{
       grid-column: 1/2;
       grid-row: 1/2;

@@ -50,33 +50,36 @@
         </ul>
     </nav>
     
-    <main>
-        <form method="get" action="thankyou.html">
-            <fieldset>
-                <label>First Name
+    <main id="join-main">
+        <form method="get" action="thankyou.html" id="join-form">
+            <fieldset class="join-fieldset">
+
+                <legend>Personal Information</legend>
+
+                <label>First Name*
                     <input type="text" required name="fname" id="chamber-fname">
                 </label>
-                <label>Last Name
+                <label>Last Name*
                     <input type="text" required name="lname" id="chamber-lname">
                 </label>
-                <label>Title or Position
-                    <input type="text" required name="title" id="chamber-title" pattern="^[a-zA-Z0-9-_ ]+$">
+                <label>Title or Position*
+                    <input type="text" required name="title" id="chamber-title" pattern="[A-Za-z0-9- ]">
                 </label>
-                <label>Email Address
+                <label>Email Address*
                     <input type="email" required name="email" id="chamber-email" placeholder="someone@gmail.com">
                 </label>
-                <label>Mobile Phone Number
+                <label>Mobile Phone Number*
                     <input type="tel" required name="mobile-phone-number" id="chamber-mobile-phone-number">
                 </label>
-                <label>Business / Organization's name
+                <label>Business / Organization's name*
                     <input type="text" required name="business-name" id="chamber-business-name">
                 </label>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="join-fieldset" id="radio-fieldset">
                 <legend>Membership Level</legend>
 
-                <label>NP Membership (non profit)
+                <label>NP Membership
                     <input type="radio" name="level" id="chamber-np" value="np">
                 </label>
 
@@ -93,14 +96,16 @@
                 </label>
 
             </fieldset>
-            <fieldset>
+            <fieldset class="join-fieldset">
+                <legend>Organization or Business</legend>
+
                 <label>Organization or Business Description
                     <textarea name="description" id="chamber-description"></textarea>
                 </label>
                 <input type="hidden" name="timestamp" id="timestamp" value="current-timestamp">
             </fieldset>
 
-            <fieldset>
+            <fieldset class="join-fieldset" id="submit-fieldset">
                 <label>
                     <input type="submit" id="chamber-submit" value="Join the Chammber">
                 </label>
@@ -118,6 +123,19 @@
 
 
         </form>
+
+        <div id="benefits">
+            <h2>Benefits and Rights</h2>
+            <h3>NP Membership</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique nulla maiores dolor nam. Laudantium atque est ducimus aspernatur iste nemo, non sit, quasi autem exercitationem omnis perferendis distinctio quod minus.</p>
+            <h3>Bronze Membership</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis corrupti facere alias placeat dicta accusantium. Tempora delectus, enim nam mollitia, ipsa sit, beatae sequi maxime aperiam ut error minus quas.</p>
+            <h3>Silver Membership</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus eius assumenda distinctio rem, veniam quas. Libero iste, molestias modi culpa dolorum animi impedit, iusto quo aliquam doloremque sequi? Itaque, ex?</p>
+            <h3>Gold Membership</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias magnam consequuntur voluptatem consequatur iure repudiandae tempora quod nisi quae adipisci pariatur reprehenderit, voluptatum illum fugiat autem accusantium alias nesciunt corrupti?</p>
+
+        </div>
 
     </main>
             
