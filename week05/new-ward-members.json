@@ -1,0 +1,11 @@
+{
+   "family name" : "Jhonson" ,
+   "date moved" : "05/05/2024" ,
+   "people number" : "3" , 
+   "bishopric visited" : "true" ,
+   "family members" : [{"name" : "Jhon" , "gender": "Male" , "birthdate" : "09/05/1989"}, {"name" : "Glenda" , "gender": "female" , "birthdate" : "07/04/1994"}, {"name" : "Jenny" , "gender": "female" , "birthdate" : "04/07/1997"}  ]
+
+    
+   
+}
+
