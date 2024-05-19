@@ -1,0 +1,44 @@
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    padding: 2rem;
+    font-size: 3rem;
+    filter: drop-shadow(-27px 10px 10px #35281d);
+}
+
+h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blue;
+    font-size: 2rem;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: indigo;
+}
+
+img{
+    width:80%;
+    height:60%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0 auto;
+    border-radius: 20px;
+    filter: drop-shadow(-10px 9px 10px #1c0b3c);
+}
+
+section{
+    background-color:darksalmon;
+    margin: 1rem;
+    border-radius: 10px;
+    border: 5px solid rgb(0, 43, 128);
+}
