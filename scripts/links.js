@@ -13,6 +13,7 @@ const displayLinks = (data) =>{ data.forEach(week => {
     week.links.forEach(link => {
        let a = document.createElement("a");
        a.classList.add("assigment");
+       a.classList.add("hover-light");
        a.setAttribute("href", `${link.url}`);
        a.textContent = `${link.title}`;
        li.appendChild(a);
