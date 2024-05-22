@@ -1,8 +1,8 @@
 const baseURL = "https://fckolob.github.io/wdd230/";
 const linksURL = "https://fckolob.github.io/wdd230/data/links.json";
 
-const learningActivitiesUl = baseURL.document.querySelector("#learning-activities-ul");
-const learningActivities = baseURL.document.querySelector("#learning-activities-ul");
+const learningActivitiesUl = document.querySelector("#learning-activities-ul");
+const learningActivities = document.querySelector("#learning-activities-ul");
 
 
 
