@@ -21,7 +21,7 @@
     <header>
         <img id="icon-image" src="icon.PNG" alt="icon">
         <button id="menu"></button>
-        <h1 id="chamber-main-title">Discover
+        <h1 id="chamber-main-title">Piriapolis Chamber of Commerce.
         </h1>
         
     </header>
@@ -35,12 +35,12 @@
     
     
             <li class="nav-li">
-                <a class = "active" href="discover.html" id="nav-2">Discover</a>
+                <a href="discover.html" id="nav-2">Discover</a>
             </li>
     
     
             <li class="nav-li">
-                <a href="directory.html" target="_blank" id="nav-3">Directory</a>
+                <a class = "active" href="directory.html" target="_blank" id="nav-3">Directory</a>
             </li>
     
     
@@ -50,26 +50,13 @@
         </ul>
     </nav>
     
-    <main id="discover-main">
-        <div id="visit-information">
-            <span id="visits-message"></span>
-        </div>
-        
-        <div id= "calendar" class="elfsight-app-e8a67808-ec38-4971-8e91-78a667c77ea3" data-elfsight-app-lazy></div>
-        <div class="sidebar-div">
-            <img  src="images/statistics-1-translated.webp" class="statistics-image" alt="Statistics"></div>
-        <div id="statistics1" class="sidebar-div">
-            <img  class="statistics-image" src="images/statistics-2-translated.webp" alt="Statistics">
-        </div>
-        <div id="discover-gallery">
-            <img class="gallery-img" src="images/bull-hill-922x615.webp" alt="Bull-hill" loading="lazy">
-            <img class="gallery-img" src="images/beach_922x519.webp" alt="Beach" loading="lazy">
-            <img class="gallery-img" src="images/castillo_pittamiglio_piriapolis_922x692.webp" alt="Pitamiglio Castell" loading="lazy">
-            <img class="gallery-img" src="images/Hotel_Argentino_Piriapolis_922x692.webp" alt="Argentinian hotel" loading="lazy">
-            <img class="gallery-img" src="images/piria-castell_922x692.webp" alt="Piria Castell" loading="lazy">
-            <img class="gallery-img" src="images/san-antonio-hill_922x692.webp" alt="San Antonio Hill" loading="lazy">
-        </div>
-        
+    <main>
+        <div class="directory-menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div> 
+        <hr>
+        <article></article>
     </main>
             
     
@@ -85,7 +72,5 @@
     </footer>
     <script src="scripts/get-dates.js"></script>
     <script src="scripts/hamb-menu.js"></script>
-    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-    <script src="scripts/last-visit.js"></script>
 </body>
 </html>

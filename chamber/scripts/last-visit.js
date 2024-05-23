@@ -41,10 +41,10 @@ function displayDaysSinceLastVisit() {
 
   const difference = currentDate - lastVisitDate;
   const differenceInDays = Math.floor(difference / (1000 * 60 * 60 * 24));
-  if(differenceInDays !== 0 && numVisits !== 0){
+  if(differenceInDays !== 0 && numVisits > 1){
   visitsDisplay.innerText = `Your last visit was ${differenceInDays} days ago.`;
     }
-  else if(differenceInDays === 0 && numVisits !== 0){
+  else if(differenceInDays === 0 && numVisits > 1){
     visitsDisplay.innerText =  "Back so soon! Awesome!";
   }
 

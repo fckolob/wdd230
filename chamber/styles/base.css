@@ -335,6 +335,19 @@ body {
     font-size: 1.6rem;
     text-align: start;
   }
+
+  #visit-information{
+    margin-top: 2rem;
+  }
+
+#visits-message{
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  color: var(--headline-color-on-color);
+  
+  
+}
+
   .chamber-card{
     
     height: 320px;

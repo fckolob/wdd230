@@ -25,7 +25,7 @@ async function apiFetch(){
     let desc = data.weather[0].description;
     let icon = data.weather[0].icon;
     weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${icon}@2x.png`);
-    weatherIcon.setAttribute("alt", "desc");
+    weatherIcon.setAttribute("alt", `${desc}`);
     description.textContent = `  -${desc}`;
  
  }
