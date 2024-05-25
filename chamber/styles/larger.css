@@ -198,6 +198,11 @@
     font-size: 1rem;
     padding-top: 3rem;
   }
+
+  .list section{
+    width: 95%;
+    
+  }
     
   footer{
       

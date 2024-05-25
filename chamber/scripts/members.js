@@ -8,13 +8,35 @@ const displayLinks = (data) =>{ data.forEach(member => {
     let img = document.createElement("img");
      img.setAttribute("src", `${member.icon}`);
      img.setAttribute("alt", `${member.name}`);
+     img.setAttribute("class", "member-img");
+     
      let name = document.createElement("h3");
      name.textContent = `${member.name}`;
-     let details = document.createElement("p");
-     details.textContent = `Address: ${member.address}\nPhone number: ${member.phone}\nMembership level: ${member.level}\nDescription: ${member.description}`;
+     name.setAttribute("id", "name");
+     let address = document.createElement("p");
+     address.setAttribute("class", "members-p");
+     address.setAttribute("id", "address");
+     address.textContent = `Address: ${member.address}`;
+     let phone = document.createElement("p");
+     phone.setAttribute("class", "members-p");
+     phone.setAttribute("id", "phone");
+     phone.textContent = `Phone number: ${member.phone}`;
+     let level = document.createElement("p");
+     level.setAttribute("id", "level");
+     level.setAttribute("class", "members-p");
+     level.textContent = `Membership level: ${member.level}`;
+
+     
+     let description = document.createElement("p");
+     description.setAttribute("class", "members-p");
+     description.setAttribute("id", "description");
+     description.textContent = `Description: ${member.description}`;
      section.appendChild(name);
      section.appendChild(img);
-     section.appendChild(details);
+     section.appendChild(address);
+     section.appendChild(phone);
+     section.appendChild(level);
+     section.appendChild(description);
      display.appendChild(section);
  
      
@@ -23,7 +45,7 @@ const displayLinks = (data) =>{ data.forEach(member => {
      
  }
 
-
+showList();
 
 
 gridbutton.addEventListener("click", () => {
@@ -39,7 +61,7 @@ function showList() {
 	display.classList.remove("grid");
 }
 
-async function getLinks(){
+async function getLinks(linksURL){
     const response = await fetch(linksURL);
     const data = await response.json();
     console.log(data);
@@ -47,4 +69,4 @@ async function getLinks(){
     
 }
 
-getLinks();
+getLinks(linksUrl);
