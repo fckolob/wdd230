@@ -27,6 +27,7 @@
 main{
   display: flex;
   flex-direction: column;
+  background-color: var(--primary-color);
 }
 #discover-main{
   display: flex;
@@ -383,6 +384,9 @@ body {
   #company-container{
     display:flex;
     flex-direction: column;
+    background-color: var(--primary-color);
+    border: none;
+    height: fit-content;
   }
   .company-card{
     font-family: var(--heading-font);
