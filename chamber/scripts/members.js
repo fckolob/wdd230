@@ -1,7 +1,7 @@
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
-const linksUrl = "https://fckolob.github.io/wdd230/data/members.json";
+ 
 
 const displayLinks = (data) =>{ data.forEach(member => {
     let section = document.createElement("section");

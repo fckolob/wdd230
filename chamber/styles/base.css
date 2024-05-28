@@ -366,6 +366,17 @@ body {
     margin-left: auto;
     margin-right:auto;
   }
+
+  #weather-information{
+    position: relative;
+  }
+
+  #weather-icon{
+    position: absolute;
+    left:16%;
+    top: 17%;
+  }
+
   .events-li{
     text-align: left;
   }
@@ -577,6 +588,66 @@ body {
     grid-column: 6/7;
     grid-row: 1/2;
   }
+
+  #chamber-banner{
+    height: 5%;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem;
+    border-radius: 20px;
+    border: solid 4px black;
+    background-color: #fff;
+    font-size: 2rem;
+    
+  }
+
+  #banner-text{
+
+    color:red;
+  }
+
+  #banner-address{
+    text-align: center;
+    font-size: 2rem;
+    color: navy;
+  }
+
+  #banner-close{
+    padding: .5rem;
+    font-size: 1rem;
+  }
+
+  .closed{
+    display: none;
+  }
+
+.spotlight-add{
+  height: 5%;
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem;
+  border-radius: 20px;
+  border: solid 4px black;
+}
+
+#spotlight-add-1{
+  
+  background-color: var(--nav-hover-link-color);
+}
+#spotlight-add-2{
+  background-color: var(--nav-background-color);
+}
+
+#spotlight-add-3{
+  background-color: #FB8500;
+}
+
+.chamber-member-img{
+  width: 30%;
+  height: auto;
+
+}
+
  
   footer{
     background-color: var(--accent3-color);
@@ -643,6 +714,10 @@ body {
       padding: .5rem;
     }
 
+    #weather-icon{
+      left:5%;
+    }
+
   }
   @media  screen and (max-width: 600px){
     #hero-text{
@@ -651,6 +726,12 @@ body {
     .centered{
       left: 27%;
     }
+
+    #weather-icon{
+      left: 35%;
+      top:35%;
+    }
+
   }
   @media  screen and (max-width: 480px){
     #menu{
@@ -701,6 +782,16 @@ body {
     .grid section{
       margin-left: 20px;
       margin-right: 30px;
+    }
+
+    #weather-information{
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    #weather-icon{
+      left:30%;
+      top:1%
     }
     
   }
