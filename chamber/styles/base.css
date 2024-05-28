@@ -763,13 +763,14 @@ body {
     .chamber-card{
       font-size: 1.5rem;
       height:fit-content;
+      width: fit-content;
     }
     .company-card{
       font-size: 1.5rem;
 
     }
     .company-info{
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
     #hero-text{
       font-size: 1rem;
@@ -792,6 +793,10 @@ body {
     #weather-icon{
       left:30%;
       top:1%
+    }
+
+    #chamber-banner{
+      font-size: 1.5rem;
     }
     
   }
