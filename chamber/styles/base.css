@@ -370,12 +370,31 @@ body {
 
   #weather-information{
     position: relative;
+    
   }
 
   #weather-icon{
     position: absolute;
     left:16%;
     top: 17%;
+  }
+
+  
+  #day-1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: .6rem;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    
+  }
+
+  .day-temperature{
+    background-color: var(--accent3-color);
+    color: var(--paragraph-color-on-color);
+    border-radius: 10px;
+    border: 2px solid beige;
   }
 
   .events-li{
@@ -731,9 +750,21 @@ body {
       left: 27%;
     }
 
+    .company-card{
+      height: fit-content;
+    }
+
     #weather-icon{
       left: 35%;
       top:35%;
+    }
+
+    #day-1{
+      top: 10rem;
+      padding:1rem;
+    }
+    .day-temperature{
+      padding: .5rem;
     }
 
   }
@@ -771,6 +802,7 @@ body {
     }
     .company-card{
       font-size: 1.5rem;
+      
 
     }
     .company-info{
@@ -792,11 +824,21 @@ body {
     #weather-information{
       padding-top: 4rem;
       padding-bottom: 4rem;
+      height: fit-content;
+      width: 92%;
     }
 
     #weather-icon{
       left:30%;
       top:1%
+    }
+
+    #day-1{
+      top: 9.5rem;
+    }
+
+    .day-temperature{
+      font-size: .7rem;
     }
 
     #chamber-banner{

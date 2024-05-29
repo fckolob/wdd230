@@ -230,7 +230,11 @@
 
 @media  screen and (min-width: 1024px){
   #weather-icon{
-    top:40%;
+    top:35%;
     left:40%;
   }
+
+#day-1{
+  top: 12rem;
+}
 }

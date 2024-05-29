@@ -1,10 +1,8 @@
 const day1 = document.querySelector("#day-1");
-const day2 = document.querySelector("day-2");
-const day3 = document.querySelector("day-3");
+
 const apiKey = "65350eabdf746570e6fbdc9a9f42f818";
-const lat = "-34.86";
-const lon = "-55.27";
-const urlF = `api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+
+const urlF = `http://api.weatherapi.com/v1/forecast.json?key=4f96681ad030464fa04225840242805&q=Piriapolis&days=4&aqi=no&alerts=no`;
 
 
 async function apiFetchForcast(){
@@ -13,7 +11,7 @@ async function apiFetchForcast(){
         if(response.ok){
             const data = await response.json();
             console.log(data);
-            //displayResultsForcast(data);
+            displayResultsForecast(data);
         }
         else{
            throw Error (await response.text());
@@ -24,12 +22,25 @@ async function apiFetchForcast(){
 }
 
  function displayResultsForecast(data){
-    currentTemp.innerHTML = `${data.main.temp}&deg;F  `;
-    let desc = data.weather[0].description;
-    let icon = data.weather[0].icon;
-    weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${icon}@2x.png`);
-    weatherIcon.setAttribute("alt", `${desc}`);
-    description.textContent = `  -${desc}`;
+    let keeper = 0;
+    data.forecast.forecastday.forEach(element => {
+        keeper += 1;
+        
+        if (keeper > 1){
+
+        let date = "";
+        date = `${element.date}`;
+
+        let temp = document.createElement("p");
+        temp.setAttribute("class", "day-temperature");
+        temp.innerHTML = `${date}: ${element.day.avgtemp_f}&deg;F  `;
+        console.log(temp);
+        
+        day1.appendChild(temp);
+        }
+    });
+    
+    
  
  }
 

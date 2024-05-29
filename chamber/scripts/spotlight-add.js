@@ -26,12 +26,51 @@ const displayBanner = (day) => {
     }
 }
 
+function getRandomInt(min, max) {
+    const minCeiled = Math.ceil(min);
+    const maxFloored = Math.floor(max);
+    return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled)}; // The maximum is exclusive and the minimum is inclusive
+
 const displayLinksS = (data) =>{ 
-    let counter = 1;
+    let silverAndGoldMembers = [];
+
     data.forEach(member => {
+        if(member.level === "silver" || member.level === "gold"){
+            silverAndGoldMembers.push(member);
+        }
+
+        
+   
+       
+        
+
+        
+
+    });
+
+    let index = getRandomInt(0, silverAndGoldMembers.length);
+    let random = [];
+    let randomMember = silverAndGoldMembers[index];
+    let traker = 0;
+
+    while(traker < 3){
+        index = getRandomInt(0, silverAndGoldMembers.length);
+        randomMember = silverAndGoldMembers[index];
+        if(random.includes(randomMember) === false){
+        random.push(silverAndGoldMembers[index]);
+        traker += 1
+        }
+
+        
+    }
+    //console.log(random);
+
+    
+    let counter = 1;
+    random.forEach(member => {
    
 
-    if(member.level === "silver" || member.level === "gold"){
+    
     let img = document.createElement("img");
      img.setAttribute("src", `${member.icon}`);
      img.setAttribute("alt", `${member.name}`);
@@ -66,7 +105,7 @@ const displayLinksS = (data) =>{
      
  
      
- });
+ );
      
      
  }
