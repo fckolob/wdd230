@@ -5,9 +5,7 @@ const banner = document.querySelector("#chamber-banner");
 const date = new Date();
 let day = date.getDay();
 
-const linksUrlS = "/data/members.json";
-
-//"https://fckolob.github.io/wdd230/data/members.json";
+const linksUrlS = "https://fckolob.github.io/wdd230/data/members.json";
 
 const displayBanner = (day) => {
     if(day === 1 || day === 2 || day === 3){
