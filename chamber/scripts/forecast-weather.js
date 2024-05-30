@@ -2,7 +2,7 @@ const day1 = document.querySelector("#day-1");
 
 const apiKey = "65350eabdf746570e6fbdc9a9f42f818";
 
-const urlF = `http://api.weatherapi.com/v1/forecast.json?key=4f96681ad030464fa04225840242805&q=Piriapolis&days=4&aqi=no&alerts=no`;
+const urlF = `https://api.weatherapi.com/v1/forecast.json?key=4f96681ad030464fa04225840242805&q=Piriapolis&days=4&aqi=no&alerts=no`;
 
 
 async function apiFetchForcast(){
