@@ -24,6 +24,9 @@ const displayBanner = (day) => {
         banner.appendChild(meeting);
         banner.appendChild(meetingAddress);
     }
+    else{
+        banner.classList.add("closed");
+    }
 }
 
 function getRandomInt(min, max) {
