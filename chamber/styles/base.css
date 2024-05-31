@@ -510,7 +510,7 @@ body {
   .list section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows:auto-fit; 
+    grid-template-rows:auto; 
     margin: 0;
     padding: 0.25rem;
     gap: 5%;
