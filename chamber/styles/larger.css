@@ -205,7 +205,13 @@
   }
 
   .list section{
-    width: 95%;
+    width: 99%;
+    
+    
+  }
+  .list section img{
+    display: block;
+    
     
   }
     
@@ -237,4 +243,7 @@
 #day-1{
   top: 12rem;
 }
+
+
+
 }

@@ -509,7 +509,7 @@ body {
   
   .list section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(7, 12%);
     grid-template-rows:auto; 
     margin: 0;
     padding: 0.25rem;
@@ -522,12 +522,12 @@ body {
   }
   
   .list section img {
-    display: flex;
+    display: block;
     /* height: 150px;
     width:200px; */
     grid-column: 2/3;
     grid-row: 1/2;
-    width: 100%;
+    width: auto;
     height: auto;
     
   }
@@ -714,7 +714,7 @@ body {
     .list section{
       grid-template-columns: none;
       grid-template-rows: none;
-      gap:none;
+      
       display:block;
       max-width: 580px;
      
